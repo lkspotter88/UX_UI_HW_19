@@ -1,0 +1,431 @@
+/* This is the stylosheet for the portfolio homepage */
+
+/*img {
+    outline: 1px solid orange; 
+}
+*/
+
+/*div {
+   outline: 1px solid red;
+}
+*/
+/* {
+    box-sizing:border-box;
+}*/
+body{
+    width: 100%;
+    
+}
+
+section{
+    padding-top:60px;
+}
+
+h1 {
+    text-align:center;
+    font-family: "Open Sans",sans-serif;
+}
+
+h2 {
+    font-size: medium;
+    font-family: "Open Sans",sans-serif;
+    text-align: center;
+}
+
+P{
+    font-family:"Lora", serif;
+    line-height: 1.6;
+}
+
+/* style for header */
+
+nav {
+    overflow:hidden;
+    background-color: #131354;
+    background-size:cover;
+    top: 0;
+    margin-left:0;
+    height: 56px;
+    width: 100%;
+    position:fixed;
+    color:white; 
+}
+
+nav div{
+    display: inline-block;
+}
+
+nav p {
+    margin-top: 25px;
+    float: left;
+    color: white;
+    text-align:center;
+    font-family:"Open Sans", Arial, sans-serif;
+    word-spacing: 0.02%;
+}
+
+nav a {
+    display: block;
+    float:right;
+    color: white;
+    font-family: "Open Sans", Arial, sans-serif;
+    text-align: center;
+    height: 56px; 
+    padding: 27px 18px 0px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: black;
+    background-color: #d2fdff;
+}
+
+
+nav img{
+    width: 36px; 
+    height: 36px;  
+}
+
+
+/*.row:after{
+    content:"";
+    display:table;
+    clear:both; 
+}*/
+
+/* style for hero section */
+
+#heroImg{
+    height:fit-content;
+    width: 100%;
+    margin-right:0;
+    margin-left:auto;   
+    background-image: url(../images/LargeHeroBackground.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+#heroContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    top: 50px;
+    margin-left:auto;
+    margin-right:auto; 
+    text-align:center;
+    width: 90%;
+    max-width: 500px;
+    color: white;
+    padding-bottom: 50px;
+    
+}
+
+#heroContent p {  
+    letter-spacing: 1px;
+}
+
+
+
+
+
+#heroContent img{
+    display: block;
+    text-align: center;
+    border-radius: 12px;
+    width: 200px;
+    margin-top: 100px;
+}
+
+button{
+    color: black;
+    /*background-color: rgb(177, 212, 227);*/
+    background-color: #f4946c;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 12px;
+    padding:15px;
+}
+
+button:hover{
+    background-color:#fbe8a6 !important;
+    font-weight:bold !important;
+    box-shadow: 2px 4px 4px rgb(184, 181, 181)!important;
+} 
+
+/*styling for about section */
+#about p{
+    margin:20px;
+    padding:15px;
+}
+#about img{
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    width:15%;
+    min-width:100px;
+    max-width:250px;
+    border-radius: 50%;
+    margin-bottom:40px;
+    
+}
+
+/*styling for mySkills section */
+
+#mySkills h2{
+    color:#131354;
+    text-align:center;
+}
+
+
+#mySkills img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:35%;
+    height: 100px;
+    width: 100px;
+    padding:30px;
+    
+}
+
+.flexContainer {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items:center;
+    column-gap:2%;
+    margin-right: 10px;
+}
+
+.flexContainer div{
+    width: 32%;
+    height: 370px;
+    margin:auto;
+    padding:10px;
+    margin:10px;
+    outline: solid 1px #a9a6a5;
+    border-radius: 12px;
+   
+}
+
+.flexContainer p{
+    color: black;
+    font-size: smaller;
+    text-justify:center;
+    text-align-last:center;
+}
+
+#tools {
+    display: block;
+    width:100%;
+}
+
+#tools img{
+    padding:20px 20px 10px 20px;
+    height: 80px;
+    width: 90px;
+    float:inline-start;
+}
+
+#tools h2{
+    float:left;
+    padding-top:26px;
+    padding-right: 15px;
+}
+
+#tools p{
+    font-size:smaller;
+    padding-top: 42px;
+    
+    
+}
+
+/*styling for My Work section */
+
+
+#workGrid{
+    display:grid;
+    max-width: 1200px;
+    justify-content: center;
+    margin:20px;
+    grid-template-rows: 300px 300px 300px;
+   /* grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-areas:"project1Image project1Body project1Body project1Body"
+                        "project2Body project2Body project2Body project2Image"
+                        "project3Image project3Body project3Body project3Body";*/
+
+    grid-template-columns: 1fr 1fr 1fr ; 
+    grid-template-areas:"project1Image project1Body project1Body"
+                        "project2Body project2Body  project2Image"
+                        "project3Image project3Body project3Body";
+    row-gap: 30px;
+
+}
+
+.projectImage img{
+    width: 95%;
+    max-height: 268px;
+    max-width: 400px;
+    padding: 10px;
+    border: solid 4px #a9a6a5;
+    padding:2px;
+    margin-left: 5%;
+}
+
+.projectBody{
+    margin-left: 5%;
+    padding-left: 20px;
+}
+
+#project1Image{
+    grid-area: project1Image;
+}
+#project1Body{
+    grid-area: project1Body;     
+}
+#project2Image{
+    grid-area: project2Image;
+}
+#project2Body{
+    grid-area: project2Body;
+    
+}
+#project3Image{
+    grid-area: project3Image;
+}
+#project3Body{
+    grid-area: project3Body;
+}
+
+#myWork h2{
+    text-align:left;
+    color:#131354;
+}
+
+#myWork h3{
+    text-align: center;
+    color:#131354;
+}
+
+/*styling for footer */
+
+footer{
+    display: inline-block;
+    width:100%;
+    margin:0;
+    background-color: #131354;
+}
+
+footer p{
+    width:100%;
+    text-align: center;
+    color:white;
+}
+ 
+#footerNavContainer{
+    display:block;
+    position: relative;
+    width:100%;
+    height: 190px;
+}
+
+footer img{
+    display: inline-block;
+    width:36px;
+    padding: 10px;
+}
+
+#footerLogo{
+    float: left;
+}
+
+#footerLI{
+    float: right;
+}
+#footerNav{
+    float:left;
+   
+    height: 160px;
+    margin: 29px 0 7px 0;
+}
+
+.footerMenuLink{
+    display: block;
+    color: white;
+    padding:5px;
+    text-align: left;
+}
+
+.footerMenuLink:hover{
+    color: #fad8cc;
+    background-color: transparent;
+}
+
+#copyright{
+    position: absolute;
+    bottom: 0;
+}
+
+.responsive{
+    width:100%;
+    height:auto;
+}
+
+@media (max-width:600px){
+    
+    .column{
+        flex:100%;
+        max-width: 100%;
+    }
+    nav{
+        width:100%;
+        height:fit-content;
+        
+    }
+    nav p{
+      float:left; 
+      margin: 0 0 0 20px;
+      width:100%; 
+      text-align:center;
+      position:relative;
+      top:-10px;
+    }
+    nav a{
+        display:block;
+        text-align:left;
+        float:none;
+        height:18px;
+        width:100%;
+        margin-left:10px;    
+    }
+
+    section{
+        padding-top:250px;
+    }
+  
+    .flexContainer{
+        flex-direction:column;
+        row-gap:15px;
+        margin: 10px;
+    }
+
+    .flexContainer div{
+        width:95%;
+        height:fit-content;
+        margin:10px;
+    }
+    #workGrid{
+        display:grid;
+        margin: auto;
+        justify-content: center;
+        grid-template-columns: 1fr; 
+        grid-template-areas:"project1Image"
+                            "project1Body"
+                            "project2Image"
+                            "project2Body"
+                            "project3Image"
+                            "project3Body";
+        row-gap: 15px;
+    
+    }
+}

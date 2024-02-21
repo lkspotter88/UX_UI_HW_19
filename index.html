@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'> 
+        <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+        <link rel="stylesheet" href="CSS/style.css">
+        <title></title>
+    </head>
+    <body>
+        <nav>
+            <div>
+            <a href="#heroImg" style="float:left; padding:10px 10px 10px 10px; margin:0;">
+                <img src="images/LogoBW.png" alt="Logo"></a>
+            <p>Linda Potter</p>
+        </div>
+            <a href="#contact">Contact</a>
+             <a href="#myWork">Work</a>
+            <a href="#mySkills">Skills</a>
+            <a href="#about">About</a> 
+        </nav>
+
+        <section id="heroImg">
+            <div id="heroContent">
+                <img src="images/DevPicture.png">
+                <h1>Hello, I am Linda Potter</h1>
+                <p>As a UX researcher, I enjoy solving user problems through seeking to
+                      understand user backgrounds and motivations and developing solutions
+                       that more effectively connect users to the technology upon which they depend.</p>
+                <button>Download Resume</button>
+            </div> 
+            
+        </section>
+        <section id="about">
+            <h1>Linda's Story</h1>
+            <p>From childhood, Linda was fascinated with technology.  
+                She studied computer science in both high school and college and enjoyed 
+                a 3-year career as a software developer at AT&T.  She enjoyed the challenge of 
+                solving problems with code and designing tools to benefit the development team.
+            </p>
+            <img src="images/binary-2450188_1920.png" alt="laptop surrounded by binary codes">
+            <p>When a family member started an independent medical practice, Linda turned her 
+                problem-solving skills from code to people.  Interacting with people from diverse 
+                backgrounds, she learned to present technical medical information in a way suited 
+                to the person with whom she was interacting.  She also learned to ask probing, but 
+                not leading, questions to gain an understanding of patient problems and communicate 
+                this information to the medical providers.  The best outcomes were achieved when 
+                the root of the problem could be identified and treated rather than just treating visible symptoms.
+            </p>
+            <img src="images/mouth-guard-4928971_1920.png" alt="teddy bear wearing mask surrounded by medical items">
+            <p>Now, Linda brings these skill sets to uncover user pain points and work 
+                with designers to create solutions that will provide users of 
+                technology with both a successful and stress-free experience. 
+            </p>
+            <img src="images/science-1182713_1920.png" alt="lightbulb on chalkboard">
+        </section>
+
+        <!-- My UX Skills section coded using CSS flex -->
+
+        <section id="mySkills">
+            <h1>Professional Skills</h1>
+            <div class="flexContainer">
+                <div id="research">
+                    <img src="images/healthicons_magnifying-glass.svg" alt="magnigying glass">
+                <h2>User Research</h2>
+                    <p>Utilizing surveys, interviews, and user testing to evaluate current products and uncover user needs</p>
+                </div>
+                <div id="empathy">
+                    <img src="images/Hug.svg" alt="hug">
+                    <h2>User Empathy</h2>
+                    <p>Evaluating user experience to identify pain points</p>
+                    <p>Communicating effectively with users of widely varied demographics</p>
+                </div>
+                <div id="software">
+                    <img src="images/icon-park-outline_code-computer.svg" alt="computer with code">
+                    <h2>Software Development</h2>
+                    <p>Understanding of information architecture and ability to collaborate with development teams</p>
+                </div>
+            </div>
+            <div id="tools">
+                <img src="images/fluent_toolbox-24-regular.png" alt="toolbox">
+                <h2>Tools:</h2>
+                <p>Figma, Miro, Goolge Drive, Google Slides</p>
+            </div>
+        </section>
+        
+ 
+      <!-- My Work section coded using CSS Grid -->  
+        <section id="myWork">
+            <h1>My Work</h1>
+            <div id="workGrid">
+                <div id="project1Image" class="projectImage">
+                    <img src="images/GoTogether.png" alt="group of travelers">
+                </div>
+                <div id="project1Body" class="projectBody">
+                    <h2>UX Case Study: GO TOGETHER</h2>
+                    <p>Designing a travel app for for the post-pandemic era targeting the needs of those traveling with a group.
+                    </p>
+                    <button class="viewProject">View project</button>
+                </div>
+                <div id="project2Image" class="projectImage">
+                    <img src="images/Mediminder.png" alt="Mediminder wireframe mockup">
+                </div>
+                <div id="project2Body" class="projectBody">
+                    <h2>UX Case Study: Mediminder</h2>
+                    <p>Designing a medication management app with customizable reminders for taking medication as well as refilling prescriptions.
+
+                    </p>
+                    <button class="viewProject">View project</button>
+                </div>
+                <div id="project3Image" class="projectImage">
+                    <img src="images/ComingSoon.png" alt="Coming Soon">
+                </div>
+                <div id="project3Body" class="projectBody">
+                    <h2>Website Design: Empower Her</h2>
+                    <p>Designing a responsive website for a new local non-profit focused on the needs of women and children undergoing economic hardship. 
+                    </p>
+                    <button class="viewProject">View project</button>
+                </div>
+            </div>
+                <h3>View all projects</h3>
+            </div>
+        </div>
+        </section>
+
+
+        <footer>
+            <p>lpotter.ux@gmail.com</p>
+            <div id="footerNavContainer">
+                <img id="footerLogo" src="images/LogoBW.png" alt="Logo">
+                <div id="footerNav">
+                    <a class="footerMenuLink" href="#about">About</a>
+                    <a class="footerMenuLink" href="#skills">Skills</a> 
+                    <a class="footerMenuLink" href="#work">Work</a> 
+                    <a class="footerMenuLink" href="#contact">Contact</a>
+                </div>
+                <img id="footerLI" src="images/teenyicons_linkedin-outline.png" alt="Linkedin square">
+                <p id="copyright">Copyright 2024</p>
+            </div>
+           
+        </footer>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</html>
