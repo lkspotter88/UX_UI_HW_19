@@ -142,7 +142,8 @@ button:hover{
 /*styling for about section */
 #aboutGrid{
     display:grid;
-    max-width: 60%;
+    width: 64%;
+    max-width: 30rem;
     margin-left: auto;
     margin-right: auto;
     grid-template-rows: auto auto auto;
