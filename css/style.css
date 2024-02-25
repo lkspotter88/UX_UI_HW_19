@@ -1,17 +1,5 @@
 /* This is the stylosheet for the portfolio homepage */
 
-/*img {
-    outline: 1px solid orange; 
-}
-*/
-
-/*div {
-   outline: 1px solid red;
-}
-*/
-/* {
-    box-sizing:border-box;
-}*/
 body{
     width: 100%;
     
@@ -85,7 +73,6 @@ nav img{
     height: 36px;  
 }
 
-
 /*.row:after{
     content:"";
     display:table;
@@ -109,19 +96,19 @@ nav img{
     flex-direction: column;
     align-items: center;
     justify-content:center;
-    top: 50px;
+    top: 56px;
     margin-left:auto;
     margin-right:auto; 
     text-align:center;
     width: 90%;
-    max-width: 500px;
+    max-width: 32rem;
     color: white;
-    padding-bottom: 50px;
+    padding-bottom: 5rem;
     
 }
 
 #heroContent p {  
-    letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
 }
 
 
@@ -131,7 +118,7 @@ nav img{
 #heroContent img{
     display: block;
     text-align: center;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     width: 200px;
     margin-top: 100px;
 }
@@ -141,33 +128,66 @@ button{
     /*background-color: rgb(177, 212, 227);*/
     background-color: #f4946c;
     font-family: "Open Sans", Arial, sans-serif;
-    font-size: 16px;
-    border-radius: 12px;
-    padding:15px;
+    font-size: 1rem;
+    border-radius: 0.75rem;
+    padding:1rem;
 }
 
 button:hover{
     background-color:#fbe8a6 !important;
     font-weight:bold !important;
-    box-shadow: 2px 4px 4px rgb(184, 181, 181)!important;
+    box-shadow: 0.125rem 0.25rem 0.25rem rgb(184, 181, 181)!important;
 } 
 
 /*styling for about section */
-#about p{
-    margin:20px;
-    padding:15px;
+#aboutGrid{
+    display:grid;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-areas:"about1Text about1Text about1Text about1Img"
+                        "about2Text about2Text about2Text about2Img"
+                        "about3Text about3Text about3Text about3Img";
+    row-gap: 2rem;
 }
+
+
 #about img{
     display:block;
-    margin-left:auto;
-    margin-right: auto;
-    width:15%;
+    width:90%;
     min-width:100px;
     max-width:250px;
-    border-radius: 50%;
-    margin-bottom:40px;
+    border-radius: 50%; 
+}
+
+.aboutImage{
+    margin-left:1rem;
+    vertical-align:top;
+}
+
+#about1Text{
+    grid-area: about1Text;
+}
+#about1Img{
+    grid-area: about1Img;     
+}
+#about2Text{
+    grid-area: about2Text;
+}
+#about2Img{
+    grid-area: about2Img;
     
 }
+#about3Text{
+    grid-area: about3Text;
+}
+#about3Img{
+    grid-area: about3Img;
+}
+
+
 
 /*styling for mySkills section */
 
@@ -182,9 +202,9 @@ button:hover{
     margin-left:auto;
     margin-right:auto;
     border-radius:35%;
-    height: 100px;
-    width: 100px;
-    padding:30px;
+    width: 6.25rem;
+    height: 6.25rem;
+    padding:2rem;
     
 }
 
@@ -193,26 +213,30 @@ button:hover{
     flex-direction: row;
     align-items: center;
     justify-items:center;
-    column-gap:2%;
-    margin-right: 10px;
+    column-gap:5%;
+    max-width: 90rem;
+    margin-right: auto;
+    margin-left:auto;
 }
 
 .flexContainer div{
-    width: 32%;
-    height: 370px;
+    width: 31%;
+    height: 30rem;
     margin:auto;
-    padding:10px;
-    margin:10px;
+    padding:0.75rem;
+    margin:0.75rem;
     outline: solid 1px #a9a6a5;
-    border-radius: 12px;
+    border-radius: 0.75rem;
    
 }
 
 .flexContainer p{
     color: black;
-    font-size: smaller;
-    text-justify:center;
-    text-align-last:center;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    text-justify:left;
+    text-align-last:left;
 }
 
 #tools {
@@ -221,22 +245,21 @@ button:hover{
 }
 
 #tools img{
-    padding:20px 20px 10px 20px;
-    height: 80px;
-    width: 90px;
+    padding:1.25rem 1.25rem 0.625rem 1.25rem;
+    width: 5.5rem;
+    height:auto;
     float:inline-start;
 }
 
 #tools h2{
     float:left;
-    padding-top:26px;
-    padding-right: 15px;
+    padding-top: 3.5rem;
+    padding-right: 1rem;
 }
 
 #tools p{
     font-size:smaller;
-    padding-top: 42px;
-    
+    padding-top: 4.5rem;
     
 }
 
@@ -245,36 +268,37 @@ button:hover{
 
 #workGrid{
     display:grid;
-    max-width: 1200px;
+    width:90%;
+    max-width: 75rem;
     justify-content: center;
-    margin:20px;
-    grid-template-rows: 300px 300px 300px;
-   /* grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-areas:"project1Image project1Body project1Body project1Body"
-                        "project2Body project2Body project2Body project2Image"
-                        "project3Image project3Body project3Body project3Body";*/
-
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-rows: 20rem 20rem 20rem;
     grid-template-columns: 1fr 1fr 1fr ; 
     grid-template-areas:"project1Image project1Body project1Body"
                         "project2Body project2Body  project2Image"
                         "project3Image project3Body project3Body";
-    row-gap: 30px;
-
+    row-gap: 2rem;
 }
 
 .projectImage img{
     width: 95%;
     max-height: 268px;
     max-width: 400px;
-    padding: 10px;
+    padding: 1.25rem;
     border: solid 4px #a9a6a5;
-    padding:2px;
-    margin-left: 5%;
+    padding:0.625rem;
+    
 }
 
-.projectBody{
-    margin-left: 5%;
-    padding-left: 20px;
+.projectBodyRight{
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.projectBodyLeft{
+    margin-left:0;
+    margin-right: 10%;
 }
 
 #project1Image{
@@ -310,9 +334,10 @@ button:hover{
 /*styling for footer */
 
 footer{
-    display: inline-block;
     width:100%;
+    height:10rem;
     margin:0;
+    padding-top: 1rem;
     background-color: #131354;
 }
 
@@ -326,7 +351,7 @@ footer p{
     display:block;
     position: relative;
     width:100%;
-    height: 190px;
+    height: 6rem;
 }
 
 footer img{
@@ -344,16 +369,15 @@ footer img{
 }
 #footerNav{
     float:left;
-   
-    height: 160px;
-    margin: 29px 0 7px 0;
+    height: 2rem;
+    margin: 1.75rem 0.5rem 0;
 }
 
 .footerMenuLink{
     display: block;
     color: white;
-    padding:5px;
-    text-align: left;
+    padding:0.5rem;
+    float:left
 }
 
 .footerMenuLink:hover{
@@ -364,6 +388,7 @@ footer img{
 #copyright{
     position: absolute;
     bottom: 0;
+
 }
 
 .responsive{
@@ -379,7 +404,7 @@ footer img{
     }
     nav{
         width:100%;
-        height:fit-content;
+        height:17rem;
         
     }
     nav p{
@@ -400,9 +425,30 @@ footer img{
     }
 
     section{
-        padding-top:250px;
+        padding-top:17rem;
     }
   
+    #aboutGrid{
+        display:grid;
+        max-width:100%;
+        width:100%;
+        margin: 0.75rem;
+        justify-content: center;
+        grid-template-columns: 1fr; 
+        grid-template-areas:"about1Img"
+                            "about1Text"
+                            "about2Img"
+                            "about2Text"
+                            "about3Img"
+                            "about3Text";
+        row-gap: 1rem;
+    
+    }
+
+    .aboutImage{
+        margin-left:auto;
+        margin-right:auto;
+    }
     .flexContainer{
         flex-direction:column;
         row-gap:15px;
@@ -412,7 +458,7 @@ footer img{
     .flexContainer div{
         width:95%;
         height:fit-content;
-        margin:10px;
+        margin: 0.75rem;
     }
     #workGrid{
         display:grid;
@@ -425,7 +471,16 @@ footer img{
                             "project2Body"
                             "project3Image"
                             "project3Body";
-        row-gap: 15px;
+        row-gap: 1rem;
     
     }
+    footer{
+        height:18rem;
+    }
+  #footerNavContainer{
+    height: 13rem;
+  }
+  #footerNav a{
+    float:none;
+  } 
 }

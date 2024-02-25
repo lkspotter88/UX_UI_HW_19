@@ -10,6 +10,7 @@ function restoreProjectImgButton(projectBody){
     $(projectBody).find("button").css("font-weight","regular");
 }
 
+
 /* highlight professional skills cards */
 
 $("#research").on("mouseenter", function(){
@@ -37,27 +38,35 @@ $("#software").on("mouseleave", function(){
     
 })
 
+/* apply a box shadow to both the image and button when mouse is over the project image */
+
 $("#project1Image").on("mouseenter", function(){
-    $(highlightProjectImgButton("#project1Body"));
+    $(highlightProjectImgButton("#project1Body"))
+    $(this).find("img").css("box-shadow","0.25rem 0.5rem 0.25rem rgb(184,181,181)");
 })
 
 $("#project1Image").on("mouseleave", function(){
     $(restoreProjectImgButton("#project1Body"));
+    $(this).find("img").css("box-shadow","none");
 }) 
     
 $("#project2Image").on("mouseenter", function(){
     $(highlightProjectImgButton("#project2Body"));
+    $(this).find("img").css("box-shadow","0.25rem 0.5rem 0.25rem rgb(184,181,181)");
 })
 
 $("#project2Image").on("mouseleave", function(){
     $(restoreProjectImgButton("#project2Body"));
+    $(this).find("img").css("box-shadow","none");
 }) 
     
 $("#project3Image").on("mouseenter", function(){
     $(highlightProjectImgButton("#project3Body"));
+    $(this).find("img").css("box-shadow","0.25rem 0.5rem 0.25rem rgb(184,181,181)");
 })
 
 $("#project3Image").on("mouseleave", function(){
     $(restoreProjectImgButton("#project3Body"));
+    $(this).find("img").css("box-shadow","none");
 }) 
     
